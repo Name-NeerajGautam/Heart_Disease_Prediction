@@ -17,4 +17,4 @@ if button:
     rfc=pickle.load(open('hd.pkl','rb'))
    
     res=rfc.predict([[age,cp,bps,cho,hrt,exa,olp,sts]])[0].round(2)
-    st.markdown(f"### The Person is: {'is having Heart Disease' if res == 1 else 'is free from Heart Disease'}")
+    st.markdown(f"### The Person is: {' having Heart Disease' if res == 1 else ' free from Heart Disease'}")
