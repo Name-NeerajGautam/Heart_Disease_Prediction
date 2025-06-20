@@ -18,3 +18,5 @@ if button:
    
     res=rfc.predict([[age,cp,bps,cho,hrt,exa,olp,sts]])[0].round(2)
     st.markdown(f"### The Person is: {' having Heart Disease' if res == 1 else ' free from Heart Disease'}")
+    #  for streamlit analysis please visit:-https://heartdiseaseprediction-3xavrtswkwdiwnfvh4tng2.streamlit.app/
+    
